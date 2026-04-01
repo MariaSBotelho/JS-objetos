@@ -1,3 +1,14 @@
 Objetos ------
-criar alterar e percorrer objetos 
-objetos literal - objetos unicos 
+formado por chave e valor
+usados para armazenar lista de mais de um tipo de informação exemplo nome e idade
+        const cliente = {
+            nome: "maria",
+            idade: 20,
+            cpf:"12312312399",
+            email:"maria@gmail.com"
+        }
+        //objeto: cliente , chave: nome com valor maria, chave idade com valor 20
+
+
+array- tem os elementos que são acessados pelo indice
+usadas para armazenas lista de informaçoes do mesmo tipo por exemplo lista de nomes
