@@ -1,4 +1,4 @@
-Objetos ------
+Objetos ---------------------------------
 formado por chave e valor
 usados para armazenar lista de mais de um tipo de informação exemplo nome e idade
         const cliente = {
@@ -9,8 +9,14 @@ usados para armazenar lista de mais de um tipo de informação exemplo nome e id
         }
         //objeto: cliente , chave: nome com valor maria, chave idade com valor 20
 
+é possivel acessar o valor da chave, alterar e deletar
+console.log(cliente.nome); // acessa valor
+cliente.nome = "Pedro" //se não existe adiciona, se existe atualiza valor
+delete cliente.nome //remove
 
-array- tem os elementos que são acessados pelo indice
+
+array-------------------------------------
+tem os elementos que são acessados pelo indice
 usadas para armazenas lista de informaçoes do mesmo tipo por exemplo lista de nomes
 
 metodo: substring - puxa valores numericos que deseja do valor da chave
