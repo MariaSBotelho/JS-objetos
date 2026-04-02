@@ -1,4 +1,7 @@
 Objetos ---------------------------------
+objeto literal é um objeto criado com a notação literal, ou seja: 
+uma lista de chave e valores dentro de chaves { },
+que atribuímos a uma variável para que o valor possa ser acessado depois.
 formado por chave e valor
 usados para armazenar lista de mais de um tipo de informação exemplo nome e idade
         const cliente = {
@@ -20,3 +23,5 @@ tem os elementos que são acessados pelo indice
 usadas para armazenas lista de informaçoes do mesmo tipo por exemplo lista de nomes
 
 metodo: substring - puxa valores numericos que deseja do valor da chave
+método Object.create() - cria um novo objeto a partir do objeto passado, uma copia
+this - faz referencia ao proprio objeto

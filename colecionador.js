@@ -1,0 +1,17 @@
+const colecionador = {
+ nome: "João do Gibi",
+ idade:41,
+ tipocolecao: ["quadrinhos"],
+ contato: "joao@email.com",
+ adicionarTipo: function(propriedade,tipo){
+   this[propriedade].push(tipo); //colecionador.chave.adicione(novo valor)
+ }
+};
+
+console.log(colecionador.nome);
+console.log(colecionador["nome"]);
+colecionador.adicionarTipo("tipocolecao", "action figures"); //add novo valor no array tipocoleção
+for(let i = 0; i < 4; i++) {
+   colecionador.adicionarTipo("tipocolecao","HQ"+i);
+ }
+console.log(colecionador.tipocolecao);
