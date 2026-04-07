@@ -17,6 +17,18 @@ console.log(cliente.nome); // acessa valor
 cliente.nome = "Pedro" //se não existe adiciona, se existe atualiza valor
 delete cliente.nome //remove
 
+JSON ---------------
+JavaScript Object Notation ou “notação de objeto JavaScript”
+formato que utiliza a sintaxe de objetos e arrays do JavaScript,
+forma mais comum de estrutura para transferência de dados entre cliente/servidor,
+e tem sido utilizado mesmo em programas que não utilizam JavaScript
+formato criado para transferência de dados, sendo assim é necessário convertê-lo para um objeto JavaScript para que os dados possam ser utilizados em um programa. Para isso, existem dois métodos nativos:
+
+JSON.parse(): converte JSON para um objeto JavaScript;
+JSON.stringify(): converte um objeto JavaScript para o formato JSON.
+
+O processo de converter estruturas de dados em sequências de bytes ou caracteres
+é chamado de serialização ou marshaling
 
 array-------------------------------------
 tem os elementos que são acessados pelo indice
@@ -30,3 +42,7 @@ ForIn() - metodo de objetos for(let variavel in objeto){} para cada
 Object.keys() - cria um array com todas as cheves do objeto
 Object.values() - cria um array com os valores do objeto
 Object.entries() - cria um array para cada chave do objeto
+
+operador 
+... - “espalha” os elementos de um array (ou propriedades de um objeto) dentro de outro.
+cria um novo array e armazena os indices solicitados juntos.
