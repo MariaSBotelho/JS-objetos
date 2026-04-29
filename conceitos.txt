@@ -46,3 +46,8 @@ Object.entries() - cria um array para cada chave do objeto
 operador 
 ... - “espalha” os elementos de um array (ou propriedades de um objeto) dentro de outro.
 cria um novo array e armazena os indices solicitados juntos.
+
+Prototype------------
+arr._proto_  : guar as definiçoes de todos arrays que criamos
+base modelo que js traz metodos associados a elementos
+-ativa os metodos 
