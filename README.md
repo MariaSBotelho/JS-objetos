@@ -154,6 +154,12 @@ const novoArray = [...nomes];
 
 ## 🧬 Prototype
 
+É através da propriedade prototype que podemos manipular o protótipo de um objeto e adicionar propriedades e funções
+
+Objetos criados de forma literal (const obj = {a: 1}) utilizam Object.prototype como protótipo;
+objetos criados com new a partir de um construtor herdam a propriedade prototype de sua função construtora;
+Objetos criados com Object.create()recebem como prototype o primeiro parâmetro da função - que pode ser null.
+
 * Base dos objetos em JavaScript
 * Permite **herança**
 * Armazena métodos compartilhados
@@ -164,6 +170,55 @@ arr.__proto__
 
 📌 Evita duplicação de métodos em vários objetos
 
+---
+
+# 🏗️ Função Construtora (JavaScript)
+
+Uma **função construtora** é um tipo de função usada para criar **vários objetos com a mesma estrutura**.
+
+Ela funciona como um **modelo (molde)**.
+
+---
+
+## 💡 Como funciona
+
+- Você define uma função com propriedades usando `this`
+- Usa a palavra-chave `new` para criar novos objetos
+- Pode passar **valores diferentes** ao criar cada objeto
+
+---
+
+## 🧪 Exemplo
+
+```js
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+const pessoa1 = new Pessoa("Maria", 25);
+const pessoa2 = new Pessoa("João", 30);
+
+
+---
+
+##Classe
+ 
+Define as propriedades(atributos) e os comportamentos(metodos) dos objetos
+
+---
+
+##Herança
+ 
+Mecanismo que permite que uma classe herde caracteristicas de outra classe
+Objeto é a instância de uma classe em memória
+
+class Programador extends Pessoa{ //programador é herança da classe pessoa tudo que tem em pessoa terá em programador
+  constructor(nome,sobrenome, cpf, email, linguagem){ // acrescenta propriedade linguagem
+    super(nome,sobrenome, cpf, email) //chama as propriedas de Pessoa
+    this.linguagem = linguagem //acrescenta nova propriedade
+  }
+}
 ---
 
 ## ✅ Resumo
