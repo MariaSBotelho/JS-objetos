@@ -14,8 +14,22 @@ class Cliente{ //dentro de classe não se usa a palavra function
     }
 }
 
-const andre = new Cliente ("Andre", "andre@gmail.com", "09818845699", 100);
 
+class Clientepoupanca extends Cliente{
+    constructor(nome,email,cpf,saldo,saldoPoupanca){
+        super(nome,email,cpf,saldo);
+        this.saldoPoupanca = saldoPoupanca;
+    }
+    depositarPoupanca(valor){
+        this.saldoPoupanca += valor;
+    }
+
+}
+
+const andre = new Clientepoupanca ("Andre", "andre@gmail.com", "09818845699", 100, 200);
+
+andre.depositar(50);
+andre.depositarPoupanca(50);
 andre.exibirSaldo();
 console.log(andre);
 
